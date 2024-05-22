@@ -1,0 +1,5 @@
+// Importar módulos de react/dependencias
+
+// Función del componente
+
+// Exportar el componente

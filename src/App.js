@@ -17,7 +17,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Estructura inicial del proyecto y limpia.
+          Estructura inicial limpia del proyecto.
         </p>
         <SecondComponent />
         <ThirdComponent 
