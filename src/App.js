@@ -1,3 +1,4 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { MyComponent } from './components/MyComponent';
@@ -8,8 +9,7 @@ import { useState } from 'react';
 import { FourthComponent } from './components/FourthComponent';
 
 function App() {
-
-  const [name, setName] = useState("Lina");
+  const [name, setName] = useState("Nest");
   const [message, setMessage] = useState("");
 
   const addMessage = (message) => {
@@ -27,24 +27,22 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Estructura inicial del proyecto y limpia.
-        </p>
+        <MyComponent />
+        <SecondComponent />
         <div>
           <hr />
           <FourthComponent />
           <hr />
         </div>
+        <h1>Estados - Hooks</h1>
         <h2>Mensaje del hijo: </h2>
-        <p>{ message }</p>
-        <Child name={name} setName={setName} addMessage={addMessage}/>
-        <SecondComponent />
+        <p>{message}</p>
+        <Child name={name} setName={setName} addMessage={addMessage} />
         <ThirdComponent
-          name="Nest"
+          name="Néstor"
           lastName="Sanabria"
           card={medicalRecord}
         />
-        <MyComponent />
       </header>
     </div>
   );
