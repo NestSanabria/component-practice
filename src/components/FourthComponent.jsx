@@ -79,7 +79,7 @@ export const FourthComponent = () => {
           </div>
         </div>
         {/* Evento Focus y Blur se usan en el input */}
-        <div className='mt-4'>
+        <div className='mt-3'>
           <input type="text"
             onFocus={ insideInput }
             onBlur={ outsideInput }
